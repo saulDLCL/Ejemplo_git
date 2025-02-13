@@ -4,12 +4,23 @@
  */
 package git;
 
+import java.util.Scanner;
+
 /**
  *
  * @author saul
  */
 public class Hola {
+    Scanner entrada = new Scanner (System.in);
+    String mensaje;
+    
+    public void Mensajer(){
+        mensaje=entrada.nextLine();
+        System.out.println("El mensaje es:"+ mensaje);
+    }
     public static void main(String[] args){
-        System.out.println("Hola mundo");
+        //System.out.println("Hola mundo");
+        Hola ejemplo=new Hola();
+        ejemplo.Mensajer();
     }
 }
